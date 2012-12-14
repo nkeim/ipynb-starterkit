@@ -1,12 +1,16 @@
 #!/usr/bin/python
 """
 IPython Notebook startup script, by Nathan Keim
+
+Takes as optional argument a directory where notebooks are stored.
+Otherwise uses a default.
 """
-import os
+import os, sys
 
 ## Configuration section
 
-# Choose a notebook directory. Default is '~/python-notebooks', i.e.
+# Choose a default notebook directory, for when none is specified.
+# Default default is '~/python-notebooks', i.e.
 # the 'python-notebooks' directory inside your home directory.
 # If you want it in your Documents folder, try something like
 # '~/Documents/Python Notebooks'.
@@ -23,9 +27,14 @@ ipython_options = 'notebook --pylab=inline'
 
 ## End configuration section
 
-nbdir = os.path.expanduser(notebook_dir)
-if not os.path.isdir(nbdir):
-    os.mkdir(nbdir)
+args = sys.argv[1:]
+
+if args:
+    nbdir = args[0]
+else:
+    nbdir = os.path.expanduser(notebook_dir)
+    if not os.path.isdir(nbdir):
+        os.mkdir(nbdir)
 
 command = ' '.join([ipython_command, ipython_options, \
                 '--notebook-dir=' + nbdir])
