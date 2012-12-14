@@ -1,0 +1,14 @@
+#!/bin/sh
+mypath="`dirname "$0"`"
+osascript << EOF
+tell application "System Events" to set terminalOn to (exists process "Terminal")
+tell application "Terminal"
+  if (terminalOn) then
+    activate
+    do script "\"$mypath/startup.command\"; exit"
+  else
+    do script "\"$mypath/startup.command\"; exit" in front window
+  end if
+end tell
+EOF
+exit 0
