@@ -39,5 +39,9 @@ works), you can edit the Python code. Right-click on the application and choose
 Open this in any text editor (e.g. TextEdit, though preferably something like
 TextWrangler).
 
+Acknowledgment
+--------------
+
+The Mac app is derived from the IPython launcher app bundled with the Enthought Python Distribution.
 
 -- Nathan Keim, 12/14/2012
