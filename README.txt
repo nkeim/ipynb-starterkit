@@ -3,7 +3,7 @@ ipynb-starterkit
 
 These are some launcher scripts, including a Mac application, to let beginners
 easily start the IPython Notebook server. They don't offer much flexibility,
-but offer a shortcut to getting started with the Notebook interface, once
+but offer a shortcut to getting started with the Notebook interface once
 you've installed a suitable Python distribution.
 
 If you're not on a Mac, check out the ipnblaunch.py script.
@@ -16,9 +16,9 @@ Applications folder, or somewhere that it's easy to find. Give it a different
 name if you like.
 
 Depending on the way your Mac is configured, you may be prohibited from running
-the app when you double-click on it, because it's from an untrusted source.
+the app when you double-click on it because it's from an untrusted source.
 Instead, right-click and choose "Open" from the menu that appears. This will
-give you the option to trust the application. You will not be asked again.
+give you the option to trust the application. From then on, you can just double-click the application as you normally would.
 
 Usage
 -----
