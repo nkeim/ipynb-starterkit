@@ -6,6 +6,8 @@ easily start the IPython Notebook server. They don't offer much flexibility,
 but offer a shortcut to getting started with the Notebook interface, once
 you've installed a suitable Python distribution.
 
+If you're not on a Mac, check out the ipnblaunch.py script.
+
 Installation
 ------------
 
